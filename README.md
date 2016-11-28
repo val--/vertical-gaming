@@ -1,4 +1,4 @@
-vertical-gaming
+Vertical Gaming
 ===============
 
-A Symfony project created on November 25, 2016, 10:02 pm.
+A list of games that can be played with a vertical/rotating monitor.
