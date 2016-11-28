@@ -56,6 +56,15 @@ footer.page-footer{
 	margin-top:0;
 	padding-top:0;
 }
+
+.game-type-icon{
+	width:50px;
+	float:left;
+}
+.small-game-type-icon{
+	margin-top:0;
+	margin-bottom:0;
+}
 /*
 #js-rotating{
 	color:#F44336;

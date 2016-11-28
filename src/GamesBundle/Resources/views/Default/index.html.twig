@@ -16,75 +16,30 @@
 <div class="listing-games">
   <div class="container">
     <div class="section">
-
       <div>
         <div class="row">
-        <div class="col s3">
-        <div class="center promo">
-                <i class="medium material-icons circle blue mobile-icon">stay_primary_portrait</i>
-                <p class="promo-caption">Mobile port</p>
-                <p class="light center">Originally designed for a mobile experience in portrait mode. Just imagine that your screen is a bigger smartphone.</p>
-              </div>
-        </div>
-        <div class="col s3">
-        <div class="center promo promo-example">
-                <i class="material-icons circle green flipper-icon"></i>
-                <p class="promo-caption">Flipper games</p>
-                <p class="light center">Not as good as a real one, but a vertical screen is way more immersive for a flipper game. </p>
-              </div>
-        </div>
-        <div class="col s3">
-        <div class="center promo promo-example">
-                <i class="material-icons circle red shootemup-icon"></i>
-                <p class="promo-caption">Shoot'em up</p>
-                <p class="light center">If you're more into vertical schmups. <br>Pew pew pew !</p>
-              </div>
-        </div>
-        <div class="col s3">
-        <div class="center promo promo-example">
-                <i class="medium material-icons circle orange game-icon">games</i>
-                <p class="promo-caption">Other games</p>
-                <p class="light center">You didn't expect these game to run in portrait mode, did you ? </p>
-              </div>
-        </div>
+        {% for category in categories %}
+          <div class="col s3">
+            <div class="center promo">
+                    <img src="images/icons/{{ category.icon }}">
+                    <p class="promo-caption">{{ category.name }}</p>
+                    <p class="light center">{{ category.description }}</p>
+            </div>
+          </div>
+        {% endfor %}
         </div>
       </div>
       <ul class="collection">
-
+        {% for game in games %}
         <li class="collection-item avatar">
-          <i class="material-icons circle blue">stay_primary_portrait</i>
-          <span class="title">80 Days</span>
-          <p>A description for a mobile port. <br>
+          <img src="images/icons/{{ game.type.icon }} " class="collection collection-item.avatar circle small-game-type-icon">
+          <span class="title">{{ game.name}}</span>
+          <p>{{ game.description }} <br>
           </p>
           <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
         </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle green flipper-icon"></i>
-          <span class="title">Pinball FX 2</span>
-          <p>A description for a pinball game. <br>
-          </p>
-          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle red shootemup-icon"></i>
-          <span class="title">Ikaruga</span>
-          <p>A description for a shoot'em up. <br>
-          </p>
-          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle orange">games</i>
-          <span class="title">An other game</span>
-          <p>A description for an other type of game. <br>
-          </p>
-          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-        </li>
-
+        {% endfor %}
       </ul>
-
     </div>
   </div>
 </div>
