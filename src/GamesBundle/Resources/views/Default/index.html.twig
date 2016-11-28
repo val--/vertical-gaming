@@ -1,0 +1,92 @@
+{% extends "GamesBundle::layout.html.twig" %}
+
+{% block title %}
+	{{ parent() }} - Index
+{% endblock %}
+
+{% block body %}
+<div id="index-banner">
+  <div class="container">
+    <h1 class="header center orange-text">Time to <span id="js-rotating">flip, spin, rotate</span> your screen !</h1>
+    <div class="row center">
+      <h5 class="header col s12 light">Do you own a PC monitor that can be pivoted? <br>Here's list of games recommended - or simply compatibles - in portrait mode.</h5>
+    </div>
+  </div>
+</div>
+<div class="listing-games">
+  <div class="container">
+    <div class="section">
+
+      <div>
+        <div class="row">
+        <div class="col s3">
+        <div class="center promo">
+                <i class="medium material-icons circle blue mobile-icon">stay_primary_portrait</i>
+                <p class="promo-caption">Mobile port</p>
+                <p class="light center">Originally designed for a mobile experience in portrait mode. Just imagine that your screen is a bigger smartphone.</p>
+              </div>
+        </div>
+        <div class="col s3">
+        <div class="center promo promo-example">
+                <i class="material-icons circle green flipper-icon"></i>
+                <p class="promo-caption">Flipper games</p>
+                <p class="light center">Not as good as a real one, but a vertical screen is way more immersive for a flipper game. </p>
+              </div>
+        </div>
+        <div class="col s3">
+        <div class="center promo promo-example">
+                <i class="material-icons circle red shootemup-icon"></i>
+                <p class="promo-caption">Shoot'em up</p>
+                <p class="light center">If you're more into vertical schmups. <br>Pew pew pew !</p>
+              </div>
+        </div>
+        <div class="col s3">
+        <div class="center promo promo-example">
+                <i class="medium material-icons circle orange game-icon">games</i>
+                <p class="promo-caption">Other games</p>
+                <p class="light center">You didn't expect these game to run in portrait mode, did you ? </p>
+              </div>
+        </div>
+        </div>
+      </div>
+      <ul class="collection">
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle blue">stay_primary_portrait</i>
+          <span class="title">80 Days</span>
+          <p>A description for a mobile port. <br>
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle green flipper-icon"></i>
+          <span class="title">Pinball FX 2</span>
+          <p>A description for a pinball game. <br>
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle red shootemup-icon"></i>
+          <span class="title">Ikaruga</span>
+          <p>A description for a shoot'em up. <br>
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle orange">games</i>
+          <span class="title">An other game</span>
+          <p>A description for an other type of game. <br>
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+{% endblock  %}

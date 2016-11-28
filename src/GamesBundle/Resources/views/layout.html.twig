@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Vertical Gaming</title>
+
+	    {% block stylesheets %}
+		      <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+		      <link href="{{ asset('css/materialize.min.css') }}" rel="stylesheet">
+		      <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+		      <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
+		      <link href="{{ asset('bower_components/Morphext/dist/morphext.css') }}" rel="stylesheet" >
+	    {% endblock %}
+	    {% block fonts %}
+	    	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    {% endblock %}
+
+	</head>
+
+	<body>
+	<div style="text-align:center">
+        </div>
+		<nav class="light-blue lighten-1" role="navigation">
+			<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="images/flip-icon-white.png">Vertical Gaming</a>
+
+				<ul class="right hide-on-med-and-down">
+					<li class="active"><a href="#">Games list</a></li>
+					<li><a href="#">Add a game</a></li>
+					<li><a href="#">F.A.Q.</a></li>
+				</ul>
+
+
+				<ul id="nav-mobile" class="side-nav">
+					<li class="active"><a href="#">Games list</a></li>
+					<li><a href="#">Add a game</a></li>
+					<li><a href="#">F.A.Q.</a></li>
+				</ul>
+
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+		{% block body %}
+        {% endblock %}
+
+
+	<footer class="page-footer orange">
+	    <div class="footer-copyright">
+	      <div class="container">
+	      Copyright stuff
+	      </div>
+	    </div>
+	</footer>
+
+	{% block javascripts %}
+		<script src="{{ asset('js/jquery.min.js') }}"></script>
+		<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+		<script src="{{ asset('js/materialize.min.js') }}"></script>
+		<script src="{{ asset('js/init.js') }}"></script>
+		<script src="{{ asset('bower_components/Morphext/dist/morphext.min.js') }}"></script>
+	{% endblock %}
+	<script>
+
+			$("#js-rotating").Morphext({
+
+			// The [in] animation type. Refer to Animate.css for a list of available animations.
+			animation: "rotateIn",
+			// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+			separator: ",",
+			// The delay between the changing of each phrase in milliseconds.
+			speed: 10000,
+			complete: function () {
+			console.log("finido");
+			// Called after the entrance animation is executed.
+			}
+			});
+	</script>
+	</body>
+
+</html>

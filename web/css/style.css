@@ -1,0 +1,62 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.listing-games{
+	background-image: url("/images/background/white_wall.png");
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+nav .brand-logo{
+	    font-size: 1.6rem;
+}
+.brand-logo img{
+	width:32px;
+	margin-bottom:-8px;
+}
+
+.flipper-icon{
+	padding:4px;
+	content:url(/images/icon-flipper.png);
+	width:80px;
+}
+
+.shootemup-icon{
+	padding:7px;
+	content:url(/images/icon-shootemup.png);
+	width:80px;
+}
+.mobile-icon{
+	color:white;
+	padding:14px;
+}
+.game-icon{
+	color:white;
+	padding:14px;
+}
+.collection-item .title{
+	font-weight: bold;
+}
+
+footer.page-footer{
+	margin-top:0;
+	padding-top:0;
+}
+/*
+#js-rotating{
+	color:#F44336;
+}*/
