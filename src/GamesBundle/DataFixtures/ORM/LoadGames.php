@@ -24,7 +24,7 @@ class LoadGames implements FixtureInterface
 
       $category_shmup = new Type();
       $category_shmup->setName("Shoot'em up");
-      $category_shmup->setDescription("If you're more into vertical schmups. <br>Pew pew pew !");
+      $category_shmup->setDescription("If you're more into vertical schmups. \nPew pew pew !");
       $category_shmup->setIcon("shmup-icon.png");
 
       $category_other = new Type();
@@ -51,13 +51,13 @@ class LoadGames implements FixtureInterface
       $manager->persist($platform_arcade);
 
       $screenshot1 = new Screenshot();
-      $screenshot1->setUrl("pinballfx2_1.png");
-      $screenshot1->setUrlCaption("pinballfx2_small_1.png");
+      $screenshot1->setUrl("pinballfx2_1.jpg");
+      $screenshot1->setUrlCaption("pinballfx2_small_1.jpg");
       $screenshot1->setAlt("A screenshot in portrait mode.");
 
       $screenshot2 = new Screenshot();
-      $screenshot2->setUrl("pinballfx2_2.png");
-      $screenshot2->setUrlCaption("pinballfx2_small_2.png");
+      $screenshot2->setUrl("pinballfx2_2.jpg");
+      $screenshot2->setUrlCaption("pinballfx2_small_2.jpg");
       $screenshot2->setAlt("A screenshot in portrait mode.");
 
       $manager->persist($screenshot1);
@@ -112,10 +112,10 @@ class LoadGames implements FixtureInterface
 
       $game3 = new Game();
       $game3->setName("Downwell");
-      $game3->setDescription("Downwell is a curious game about a young person venturing down a well in search of untold treasures with only his Gunboots to protect him.");
+      $game3->setDescription("Downwell is a game about a young person venturing down a well with his Gunboots.");
       $game3->setWhy("It looks good.");
       $game3->setIsValid(true);
-      $game3->setType($category_other);
+      $game3->setType($category_mobile);
       $game3->addScreenshot($screenshot5);
       $game3->addScreenshot($screenshot6);
       $game3->setPlatform($platform_steam);

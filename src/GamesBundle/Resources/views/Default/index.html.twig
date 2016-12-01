@@ -33,10 +33,12 @@
         {% for game in games %}
         <li class="collection-item avatar">
           <img src="images/icons/{{ game.type.icon }} " class="collection collection-item.avatar circle small-game-type-icon">
-          <span class="title">{{ game.name}}</span>
-          <p>{{ game.description }} <br>
-          </p>
-          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+          <span class="title">{{ game.name}} <span class="platform">{{ game.platform.name }} </span></span>
+           <div class="row">
+            <div class="col s9"><p>{{ game.description }}</p></div>
+            <div class="col s2">test</div>
+            <div class="col s1"><a href="#!" class="secondary-content icon-info-game"><i class="material-icons">info_outline</i></a></div>
+          </div>
         </li>
         {% endfor %}
       </ul>
